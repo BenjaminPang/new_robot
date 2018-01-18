@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<package>
+  <name>follow_waypoints</name>
+  <version>0.0.0</version>
+  <description>The follow_waypoints package</description>
+
+  <!-- One maintainer tag required, multiple allowed, one person per tag -->
+  <!-- Example:  -->
+  <!-- <maintainer email="jane.doe@example.com">Jane Doe</maintainer> -->
+  <maintainer email="polyu@todo.todo">polyu</maintainer>
+  
+  <author email="danielsnider12@gmail.com">Daniel Snider</author>
+  <license>Unlicense</license>
+  <url type="website">http://wiki.ros.org/follow_waypoints</url>
+  <url type="repository">https://github.com/danielsnider/follow_waypoints</url>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>actionlib</build_depend>
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>move_base_msgs</build_depend>
+  <build_depend>rospy</build_depend>
+  <build_depend>smach</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <run_depend>actionlib</run_depend>
+  <run_depend>geometry_msgs</run_depend>
+  <run_depend>move_base_msgs</run_depend>
+  <run_depend>rospy</run_depend>
+  <run_depend>smach</run_depend>
+  <run_depend>std_msgs</run_depend>
+
+</package>

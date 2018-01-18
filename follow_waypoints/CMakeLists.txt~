@@ -1,0 +1,35 @@
+cmake_minimum_required(VERSION 2.8.3)
+project(follow_waypoints)
+
+## Compile as C++11, supported in ROS Kinetic and newer
+# add_compile_options(-std=c++11)
+
+## Find catkin macros and libraries
+## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
+## is used, also find other catkin packages
+find_package(catkin REQUIRED COMPONENTS
+  actionlib
+  geometry_msgs
+  move_base_msgs
+  rospy
+  smach
+  std_msgs
+)
+
+catkin_python_setup()
+
+catkin_package(
+  LIBRARIES ${PROJECT_NAME}
+  CATKIN_DEPENDS actionlib geometry_msgs move_base_msgs rospy smach std_msgs
+)
+
+catkin_install_python(
+  PROGRAMS nodes/follow_waypoints
+  DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)
+
+# Install launch files
+install(DIRECTORY launch/
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/launch
+)
+
