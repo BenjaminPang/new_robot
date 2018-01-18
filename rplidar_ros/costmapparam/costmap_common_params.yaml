@@ -1,0 +1,17 @@
+footprint: [ [-0.42,-0.26], [-0.5, 0], [-0.42,0.26], [0.42,0.26],[0.6,0],[0.42,-0.26] ]
+#robot_radius: 0.65 
+transform_tolerance: 3
+map_type: costmap
+
+inflation_layer:
+  enabled: true
+  cost_scaling_factor: 10.0
+  inflation_radius: 0.3
+
+static_layer:
+  enabled: true
+
+#sonar_layer:
+  #ns: /sonar
+  #topics: ["range_front_left","range_front_middle","range_front_right","range_2"]
+  #no_readings_timeout: 1.0

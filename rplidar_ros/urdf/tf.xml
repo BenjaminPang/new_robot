@@ -1,0 +1,7 @@
+<launch>
+ <node pkg="tf" type="static_transform_publisher" name="base_to_left_front" args="0.35 0.169 0 0 0 0 /base_link /left_front_wheel 100"/>
+ <node pkg="tf" type="static_transform_publisher" name="base_to_right_front" args="0.35 -0.169 0 0 0 0 /base_link /right_front_wheel 100"/>
+ <node pkg="tf" type="static_transform_publisher" name="base_to_left_back" args="-0.35 0.169 0 0 0 0 /base_link /left_back_wheel 100"/>
+ <node pkg="tf" type="static_transform_publisher" name="base_to_right_back" args="-0.35 -0.169 0 0 0 0 /base_link /right_back_wheel 100"/>
+ <node pkg="tf" type="static_transform_publisher" name="base_to_laser" args="0 0 0 0 0 0 /base_link /laser 100"/>
+</launch>
